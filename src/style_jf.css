@@ -53,6 +53,12 @@
     width: 100%;
   }
 
+  @media (max-width: 768px) {
+      nav a{
+         font-size: 20px;
+      }
+  }
+   
   footer{
     width: 800px;
     display: block;

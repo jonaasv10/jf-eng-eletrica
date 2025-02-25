@@ -315,5 +315,6 @@
          max-width: 500px; 
          margin: 20px auto; 
          display: block; 
+         margin-top: 10px;
      }
   }

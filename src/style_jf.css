@@ -1,0 +1,304 @@
+   /* Página principal: (HOME)  */
+   
+   /*Para todas as páginas */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+ }
+  body {
+      font-family: "Lato", sans-serif
+  }
+
+  label{
+    margin-bottom: 10px;
+  }
+
+  @font-face {
+      font-family: TopShow;
+      src: url("Top Show.otf");
+  }
+  h1{
+      font-family: TopShow;
+  }
+  h2{
+      font-size: 25px;
+  }
+  nav{
+    text-align: center;
+    margin-top: 30px;
+  }
+
+  nav a{
+    color: black;
+    text-decoration: none;
+    padding: 0px 50px 10px 0px;
+    font-size: 25px;
+    position: relative;
+  }
+
+  nav a::after{
+    content: " ";
+    width: 0%;
+    height: 3px;
+    background-color: black;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: 0.5s ease-in-out;
+  }
+
+  nav a:hover::after{
+    width: 100%;
+  }
+
+  footer{
+    width: 800px;
+    display: block;
+    margin-top: 20px;
+    margin-bottom: 35px;
+    text-align: center;
+  }
+
+  footer p{
+    margin: 0;
+    margin-bottom: 4px;
+    margin-top: 5px;
+  }
+
+  .social-icons a {
+    margin: 0 3px; /* Adiciona um espaçamento lateral entre os ícones */
+    display: inline-block; 
+}
+
+.social-icons img {
+    margin-top: -5px;
+    width: auto;
+    vertical-align: middle; /* Garante alinhamento correto */
+}
+  
+  #face{
+      height: 25px;
+      width: 25px;
+  }
+  
+  #whats{
+      height: 30px; 
+      width: 30px;
+  }
+  
+  #insta{
+      height: 24px; 
+      width: 24px;
+  }
+
+
+/*Estilização nomes dos projetos */
+#projeto_1, #projeto_2, #projeto_3, #projeto_4, #projetos_5_6{
+  font-family: TopShow; 
+  font-size: 25px;
+  padding-top: 100px;
+}
+
+
+/* Projetos 1, 2 e 3*/
+.container {
+  display: flex;
+  flex-wrap: wrap; 
+  gap: 10px; 
+  padding: 10px; 
+  justify-content: center; 
+  text-align: center; 
+}
+
+.section {
+  flex: 1; 
+  min-width: 300px; 
+}
+
+.highlighted img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 8px; 
+}
+
+.grid-layout {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); 
+  gap: 10px; 
+}
+
+.grid-layout .image img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 8px; 
+}
+
+/* Responsividade para telas menores */
+@media (max-width: 768px) {
+  .section {
+    flex: 1 1 100%; 
+  }
+
+  .grid-layout {
+    grid-template-columns: 1fr; 
+  }
+}
+
+
+/* Estilizaçõa FAQ */
+.perguntas_frequentes{
+  width: 1000px;
+  margin: 0 auto; 
+  text-align: center; 
+}
+
+.perguntas_frequentes h3{
+  font-family: TopShow;
+  font-size: 30px;
+  text-align: center;
+  margin-top: 80px;
+  margin-bottom: 30px;
+}
+
+.section_faq{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.faq{
+  width: 100%;
+  list-style: none;
+  text-align: center;
+}
+
+.faq li{
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.faq li label{
+  text-align: center;
+  padding: 15px 10px;
+  font-size: 20px;
+  font-weight: 300;
+  display: flex;
+  cursor: pointer;
+}
+
+.faq li label span{
+  align-items: center;
+  width: 25px;
+  height: 25px;
+  display: inline-flex;
+  padding: 8px;
+  background-color: black;
+  color: #fff;
+  border-radius: 50%;
+  font-size: 20px;
+  margin-right: 10px;
+  line-height: normal;
+}
+
+.faq li label::before{
+  content: '+';
+  margin-right: 10px;
+  font-size: 24px;
+}
+
+.faq input[type=radio]{
+  display: none;
+}
+
+.faq .resposta{
+  color: #535353;
+  font-size: 17px;
+  padding: 10px 14px;
+  line-height: 38px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height .5s, padding .5s;
+}
+
+.faq input[type=radio]:checked + label + .resposta{
+  max-height: 400px;
+  padding: 10px 10px 20px;
+
+}
+
+.faq input[type=radio]:checked + label span{
+  background-color: #304b70;
+}
+
+.faq input[type=radio]:checked + label::before{
+  content: '-';
+}
+
+
+@media (max-width: 1024px) {
+  .perguntas_frequentes {
+    width: 90%; 
+  }
+
+  .faq li label {
+    font-size: 17px; 
+    padding: 12px 8px; 
+  }
+
+  .faq .resposta {
+    font-size: 16px;
+    line-height: 32px;
+  }
+}
+
+@media (max-width: 768px) {
+  .perguntas_frequentes {
+    width: 100%; 
+  }
+
+  .faq {
+    padding: 0 10px;
+  }
+
+  .faq li label {
+    font-size: 14px;
+    padding: 10px 6px;
+  }
+
+  .faq .resposta {
+    font-size: 14px;
+    line-height: 28px;
+    padding: 8px;
+  }
+}
+
+@media (max-width: 480px) {
+  .faq {
+    padding: 0 5px;
+  }
+
+  .faq li label {
+    font-size: 13px;
+    padding: 8px 5px;
+  }
+
+  .faq li label span {
+    width: 18px;
+    height: 18px;
+    font-size: 13px;
+  }
+
+  .faq .resposta {
+    font-size: 13px;
+    line-height: 26px;
+  }
+}
+

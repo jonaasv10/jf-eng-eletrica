@@ -1,0 +1,122 @@
+@font-face {
+    font-family: TopShow;
+    src: url("Top Show.otf");
+}
+h1{
+    font-family: TopShow;
+}
+
+nav{
+  text-align: center;
+  margin-top: 30px;
+}
+
+nav a{
+  color: black;
+  text-decoration: none;
+  padding: 0px 50px 10px 0px;
+  font-size: 25px;
+  position: relative;
+}
+
+nav a::after{
+  content: " ";
+  width: 0%;
+  height: 3px;
+  background-color: black;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transition: 0.5s ease-in-out;
+}
+
+nav a:hover::after{
+  width: 100%;
+}
+
+
+h1{
+    margin-top: 40px;
+    margin-left: 30px;
+    text-align: center;
+    font-size: 35px;
+    margin-bottom: 0;
+  }
+
+  p{
+    margin-top: 5px;
+    font-family: sans-serif;
+    font-size: 20px;
+    text-align: center;
+  }
+
+  footer{
+    margin-top: 20px;
+    margin-bottom: 35px;
+  }
+
+  footer p{
+    margin: 0;
+    margin-bottom: 4px;
+    margin-top: 5px;
+  }
+
+  .social-icons a {
+    margin: 0 3px; 
+    display: inline-block; 
+}
+
+.social-icons img {
+    margin-top: -5px;
+    width: auto;
+    vertical-align: middle; 
+}
+
+#face{
+    height: 25px;
+     width: 25px;
+}
+
+#whats{
+    height: 30px; 
+    width: 30px;
+}
+
+#insta{
+    height: 24px; 
+    width: 24px;
+}
+
+/*Estilização do formulário e do mapa */
+  #submit {
+    border-radius: 8px;
+    font-size: 15px;
+    margin: 0 auto;
+    display: block;
+  }
+
+  .formBox {
+    margin-left: 30px;
+    width: 90%;
+  }
+
+  .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    padding: 20px;
+  }
+
+  .mapBox {
+    width: 100%;
+  }
+
+  .mapBox iframe {
+    width: 100%;
+    height: 100%;
+  }
+
+  
+
+  
+

@@ -275,36 +275,13 @@
   }
 
   .faq li label {
-    font-size: 16px;
+    font-size: 18px;
     padding: 10px 6px;
   }
 
   .faq .resposta {
-    font-size: 14px;
+    font-size: 15px;
     line-height: 28px;
     padding: 8px;
   }
 }
-
-@media (max-width: 480px) {
-  .faq {
-    padding: 0 5px;
-  }
-
-  .faq li label {
-    font-size: 13px;
-    padding: 8px 5px;
-  }
-
-  .faq li label span {
-    width: 18px;
-    height: 18px;
-    font-size: 13px;
-  }
-
-  .faq .resposta {
-    font-size: 13px;
-    line-height: 26px;
-  }
-}
-

@@ -54,7 +54,7 @@
 
    @media (max-width: 768px) {
       nav a{
-         font-size: 18px;
+         font-size: 20px;
       }
   }
 
@@ -242,10 +242,10 @@
      #slide2:checked ~ #bullets label:nth-child(2),
      #slide3:checked ~ #bullets label:nth-child(3),
      #slide4:checked ~ #bullets label:nth-child(4) {
-        background: #444;
+        background: #000000;
      }
 
-     @media screen and (max-width: 768px) {
+     @media (max-width: 768px) {
         .container {
             flex-direction: column;
             align-items: center;
@@ -255,6 +255,7 @@
         .texto {
             width: 90%;
             text-align: center; 
+            font-size: 22px;
         }
     
         #slider {
@@ -264,8 +265,23 @@
     
         #slides {
             padding: 0.5vw;
-            border: 0.1vw solid #ccc;
+            border: #fff;
         }
+    }
+ 
+    @media (min-width: 768px) and (max-width: 1024px){
+      .texto{
+         font-size: 20px;
+         width: 50%;
+      }
+
+      #slider{
+         width: 70%;
+      }
+      
+      #slides{
+         border: #fff;
+      }
     }
 
 /* Estilização dos certificados e termos*/

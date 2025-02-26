@@ -266,6 +266,9 @@
 }
 
 @media (max-width: 768px) {
+    #texto_inicio{
+      font-size: 21px;
+    }
   .perguntas_frequentes {
     width: 100%; 
   }

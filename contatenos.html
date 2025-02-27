@@ -20,7 +20,7 @@
       <p> Faça agora mesmo seu projeto elétrico! </p>
 
       <div class="container">
-        <form class="w3-row-padding w3-padding-16 formBox" method="post" action="src/form.php" >
+        <form class="w3-row-padding w3-padding-16 formBox" method="post" action="https://formsubmit.co/vieiramaduro@gmail.com" >
           
             <label for="nome" type="text">Nome Completo</label>
             <input name="nome" id="nome" type="text" class="w3-input w3-border-black" type="text" id="nome" required>
@@ -39,7 +39,8 @@
             <br>
             
             <div style="text-align: center;">
-              <input class="w3-button w3-black" type="submit" name="submit" id="submit" value="Enviar Mensagem"> 
+              <input type="hidden" name="_captcha" value="false"> 
+              <button class="w3-button w3-black" type="submit"> Enviar mensagem </button>
             </div>
           
         </form>
